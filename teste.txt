@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+  <title>Modelo2</title>
+</head>
+<body>
+  <header>
+	   <div class="containerPresentaion">
+			<img id="backImg" src="img/home.png" alt="locationInterview"></img>
+			<article class="boxNavPresentation">
+				<span><img src="img/logo.svg" alt="logo"></span>
+				<span><img src="img/login.png" alt="login"></span>
+			</article>
+			<div class="boxTextPresentation">
+				<article class="textPresentation">
+					<h2>Barbearia do <br> Welingtom</h2>
+					<br>
+					<aside>
+						<span>A melhor barbearia de Patrocínio</span>
+					</aside>
+				</article>
+				<img src="img/logo.svg" alt="logo">
+			</div>
+			
+		</div>
+  </header>
+	<main>
+	  
+	  
+	  <section class="containerFuncionamento">
+	    <h3>Horario de Funcionamento</h3>
+	    <div class="contentHorarioFuncionamento">
+	      <article class="boxContentHF">
+	        <aside>Domingo</aside>
+	        <aside>FECHADO</aside>
+	      </article>
+	      <article class="boxContentHF">
+	        <aside>Segunda</aside>
+	        <aside>13:00 - 20:00</aside>
+	      </article>
+	      <article class="boxContentHF">
+	        <aside>Quarta</aside>
+	        <aside>08:00 - 20:00</aside>
+	      </article>
+	      <article class="boxContentHF">
+	        <aside>Quinta</aside>
+	        <aside>08:00 - 20:00</aside>
+	      </article>
+	      <article class="boxContentHF">
+	        <aside>Sexta</aside>
+	        <aside>08:00 - 20:00</aside>
+	      </article>
+	      <article class="boxContentHF">
+	        <aside>Sabado</aside>
+	        <aside>08:00 - 17:00</aside>
+	      </article>
+	    </div>
+	  </section>
+	  
+	  <section class="containerLocation">
+	    <h3>Location</h3>
+	    <div class="boxLocationContent">
+	      <p>
+	      Av. Governador Valadares, 463 - Centro - Patrocinio - MG, 38740 - 972
+	    </p>
+	      <img src="img/location.jpg" alt="location">
+	    </div>
+	  </section>
+	</main>
+	<footer>
+	  <section class="boxContentFooter">
+	    <h3>Design</h3>
+	    <aside>
+	      <img src="img/socialMedia/instagram.svg" alt="instagram">
+	      <img src="img/socialMedia/facebook.svg" alt="facebook">
+	      <img src="img/socialMedia/twitter.svg" alt="twitter">
+	    </aside>
+	  </section>
+	  
+	  <section class="boxContentFooter">
+	    <h3>Mailing List</h3>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit 
+	    </p>
+	    <button>
+	      <aside>Email Address</aside>
+	      <span class="material-symbols-outlined add">add</span>
+	    </button>
+	  </section>
+	  
+	  <section class="boxContentFooter">
+	    <article class="footerMap">
+	      <aside>Pagamento</aside>
+	      <aside>Fale conosco</aside>
+	      <aside>Agendamento</aside>
+	      <aside>Perguntas Frequentes</aside>
+	      <aside>FAQ</aside>
+	    </article>
+	  </section>
+	</footer>
+</body>
+</html>
