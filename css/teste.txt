@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
+*{ margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+:root{
+  --black:#00010d;
+  --white:whitesmoke;
+  --grey:#151515cd;
+  --grey2:#181818;
+  --grey3:#2b2b2b;
+  --gold:#ffbf0e;
+  --fundoTexto: #DCDCDC;
+  
+  --PCtitulos:2.4rem;
+  --PCtitulos2:1.8rem;
+  --PCtexto:1.3rem;
+}
+
+body{
+  background:var(--grey2);
+  font-weight: 300;
+}
+
+main > section{
+  margin: 1rem auto;
+  width: 85%;
+  border-radius: 5px;
+}
+
+.containerPresentaion{
+  position: relative;
+  border: 1px transparent solid;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.containerPresentaion h2{
+  font-family: "Karma", serif;
+}
+#backImg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: .8;
+}
+.boxNavPresentation{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.boxNavPresentation img{
+  width: 4rem;
+}
+.boxTextPresentation{
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 2px;
+  width: 70%;
+}
+.boxNavPresentation aside{
+  font-family: "Poppins", sans-serif;
+}
+.boxTextPresentation h2{
+  color: var(--gold);
+}
+.boxTextPresentation aside{
+  margin-block: 0rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  color: var(--white);
+}
+.boxTextPresentation img{
+  width: 6rem;
+}
+
+.containerFuncionamento{
+  background: var(--grey3);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.containerFuncionamento h3{
+  color: var(--gold);
+}
+.contentHorarioFuncionamento{
+   display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: .5rem;
+}
+.boxContentHF{
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+}
+.boxContentHF aside{
+  font-family: "Poppins", sans-serif;
+}
+.containerLocation{
+  background: var(--grey3);
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: center;
+  color: var(--white);
+  font-weight: 300;
+  padding-block: 2rem;
+}
+.boxLocationContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.boxLocationContent p{
+  padding-inline:.5rem;
+  width: 75%;
+  margin: .5rem auto;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.boxLocationContent img{
+  width: 18rem;
+}
+
+.fa{
+  color: var(--gold);
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+footer{
+  background: var(--black);
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3rem 1.5rem;
+}
+.boxContentFooter:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.boxContentFooter:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.boxContentFooter h3{
+  color: var(--white);
+  font-weight: 300;
+}
+.boxContentFooter > aside{
+  display: flex;
+  gap: 2rem;
+}
+
+.boxContentFooter p{
+  color: var(--white);
+  font-weight: 300;
+  width: 80%;
+  text-align: justify;
+}
+
+.boxContentFooter button{
+  width: 80%;
+  outline: none;
+  border: none;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 1rem 1.5rem;
+}
+
+.boxContentFooter button aside{
+  font-size: 1.1rem;
+}
+
+.footerMap{
+  display: flex;
+  flex-direction: column;
+  gap:.8rem;
+  text-align: left;
+  padding-left: 2.5rem;
+}
+.footerMap aside{
+  color: var(--white);
+}
+
+
+@media screen and (min-width:720px){
+
+  .boxTextPresentation h2{
+    font-size: var(--PCtitulos);
+  }
+  .boxNavPresentation img{
+    width: 8rem;
+  }
+  .boxTextPresentation img{
+    width: 12rem;
+  }
+  .containerLocation{
+    width: 70%;
+  }
+  .boxLocationContent{
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    padding-inline: 5rem;
+  }
+  .boxLocationContent p{
+    margin: 0;
+    font-size: var(--PCtexto);
+    letter-spacing: .2rem;
+    text-align: left;
+    border: 1px red solid;
+    width: 30%;
+  }
+  .boxLocationContent img{
+    width: 10rem;
+  }
+  .textPresentation{
+    font-size: var(--PCtexto);
+  }
+  .containerFuncionamento{
+    width: 70%;
+  }
+  .containerFuncionamento h3{
+    font-size: var(--PCtitulos2);
+  }
+  .contentHorarioFuncionamento{
+    padding-inline: 4rem;
+  }
+  .contentHorarioFuncionamento aside{
+    font-size: var(--PCtexto);
+    letter-spacing: .2rem;
+  }
+  
+  footer{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  footer h3{
+    font-size: var(--PCtitulos2);
+  }
+  .boxContentFooter{
+    width: 33%;
+    padding: 0;
+  }
+  .boxContentFooter aside img{
+    width: 5rem;
+  }
+  .boxContentFooter p{
+    width: auto;
+    font-size: var(--PCtexto);
+  }
+    
+  .boxContentFooter button{
+    width: auto;
+    font-size: var(--PCtexto);
+    width: 90%;
+  }
+  .boxContentFooter > aside{
+    gap: .5rem;
+  }
+  .footerMap aside{
+    font-size: var(--PCtexto);
+  }
+}
