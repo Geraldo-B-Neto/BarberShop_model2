@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
 *{ margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,7 +14,9 @@
   --gold:#ffbf0e;
   --fundoTexto: #DCDCDC;
   
-  --textoNormal:1.1rem;
+  --PCtitulos:2.4rem;
+  --PCtitulos2:1.8rem;
+  --PCtexto:1.3rem;
 }
 
 body{
@@ -33,10 +36,14 @@ main > section{
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-.containerPresentaion img:nth-child(1){
+.containerPresentaion h2{
+  font-family: "Karma", serif;
+}
+#backImg{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -44,13 +51,25 @@ main > section{
   z-index: -1;
   opacity: .8;
 }
-
-.boxTextPresentation{
-  margin: 3rem 0 3rem 2rem;
+.boxNavPresentation{
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  align-items: left;
+  justify-content: space-between;
+  align-items: center;
+}
+.boxNavPresentation img{
+  width: 4rem;
+}
+.boxTextPresentation{
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   letter-spacing: 2px;
+  width: 70%;
+}
+.boxNavPresentation aside{
+  font-family: "Poppins", sans-serif;
 }
 .boxTextPresentation h2{
   color: var(--gold);
@@ -62,7 +81,9 @@ main > section{
   gap: .5rem;
   color: var(--white);
 }
-
+.boxTextPresentation img{
+  width: 6rem;
+}
 
 .containerFuncionamento{
   background: var(--grey3);
@@ -86,6 +107,9 @@ main > section{
   justify-content: space-between;
   color: var(--white);
 }
+.boxContentHF aside{
+  font-family: "Poppins", sans-serif;
+}
 .containerLocation{
   background: var(--grey3);
   display: flex;
@@ -107,6 +131,7 @@ main > section{
   width: 75%;
   margin: .5rem auto;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 .boxLocationContent img{
   width: 18rem;
@@ -185,19 +210,51 @@ footer{
 
 
 @media screen and (min-width:720px){
-  
-  
-  
+
+  .boxTextPresentation h2{
+    font-size: var(--PCtitulos);
+  }
+  .boxNavPresentation img{
+    width: 8rem;
+  }
+  .boxTextPresentation img{
+    width: 12rem;
+  }
+  .containerLocation{
+    width: 70%;
+  }
   .boxLocationContent{
     flex-direction: row;
+    justify-content: space-around;
     gap: 1rem;
     padding-inline: 5rem;
   }
   .boxLocationContent p{
     margin: 0;
+    font-size: var(--PCtexto);
+    letter-spacing: .2rem;
+    text-align: left;
+    border: 1px red solid;
+    width: 30%;
   }
   .boxLocationContent img{
-    width: 50%;
+    width: 10rem;
+  }
+  .textPresentation{
+    font-size: var(--PCtexto);
+  }
+  .containerFuncionamento{
+    width: 70%;
+  }
+  .containerFuncionamento h3{
+    font-size: var(--PCtitulos2);
+  }
+  .contentHorarioFuncionamento{
+    padding-inline: 4rem;
+  }
+  .contentHorarioFuncionamento aside{
+    font-size: var(--PCtexto);
+    letter-spacing: .2rem;
   }
   
   footer{
@@ -205,6 +262,9 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 1rem;
+  }
+  footer h3{
+    font-size: var(--PCtitulos2);
   }
   .boxContentFooter{
     width: 33%;
@@ -215,11 +275,18 @@ footer{
   }
   .boxContentFooter p{
     width: auto;
+    font-size: var(--PCtexto);
   }
+    
   .boxContentFooter button{
     width: auto;
+    font-size: var(--PCtexto);
+    width: 90%;
   }
   .boxContentFooter > aside{
     gap: .5rem;
+  }
+  .footerMap aside{
+    font-size: var(--PCtexto);
   }
 }
