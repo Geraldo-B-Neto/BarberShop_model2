@@ -8,11 +8,10 @@
 :root{
   --black:#00010d;
   --white:whitesmoke;
-  --grey:#151515cd;
-  --grey2:#181818;
-  --grey3:#2b2b2b;
-  --gold:#ffbf0e;
-  --fundoTexto: #DCDCDC;
+  
+  --first:#181818;
+  --second:#2b2b2b;
+  --third:#ffbf0e;
   
   --PCtitulos:2.4rem;
   --PCtitulos2:1.8rem;
@@ -20,13 +19,12 @@
 }
 
 body{
-  background:var(--grey2);
-  font-weight: 300;
+  background:var(--first);
 }
 
 main > section{
   margin: 1rem auto;
-  width: 85%;
+  width: 90%;
   border-radius: 5px;
 }
 
@@ -39,6 +37,7 @@ main > section{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  letter-spacing: 2px;
 }
 .containerPresentaion h2{
   font-family: "Karma", serif;
@@ -52,27 +51,34 @@ main > section{
   opacity: .8;
 }
 .boxNavPresentation{
-  width: 80%;
+  width: 86%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .boxNavPresentation img{
-  width: 4rem;
+  width: 6rem;
 }
 .boxTextPresentation{
   margin: 3rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  letter-spacing: 2px;
-  width: 70%;
+  width: 90%;
+}
+.boxTextPresentation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .boxNavPresentation aside{
   font-family: "Poppins", sans-serif;
 }
 .boxTextPresentation h2{
-  color: var(--gold);
+  color: var(--third);
+  text-align: center;
+  margin: auto;
 }
 .boxTextPresentation aside{
   margin-block: 0rem 1.2rem;
@@ -82,11 +88,71 @@ main > section{
   color: var(--white);
 }
 .boxTextPresentation img{
-  width: 6rem;
+  width: 10rem;
+}
+.containerHairCuts{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+.boxHairCutsTitle{
+  text-align: center;
+  color: var(--white);
+  letter-spacing: .1rem;
+}
+.boxHairCutsTitle h3{
+  font-family: "Karma", serif;
+}
+.boxHairCutsTitle aside{
+  font-family: "Poppins", sans-serif;
+}
+.cardContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--second);
+  color: var(--white);
+  padding: 1.5rem 1rem;
+  border-radius: 5px;
+  
+}
+.cardContent h4{
+  font-size: ;
+  font-family: "Karma", serif;
+  color: var(--third);
+  letter-spacing: .2rem;
+  font-style: italic;
+  text-align: center;
+}
+.cardContent img{
+  border-radius: 5px;
+  width: 12rem;
+}
+.boxHairCutsContent{
+  display: flex;
+  overflow-x: scroll;
+  gap: 3rem;
+}
+.hairCutPrice{
+  display: flex;
+  justify-content: space-around;
+  width: 15rem;
+  letter-spacing: .1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.addHairCut{
+  border: none;
+  outline: nons;
+  padding: 10px;
+  margin: auto;
 }
 
 .containerFuncionamento{
-  background: var(--grey3);
+  background: var(--second);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -94,7 +160,9 @@ main > section{
   padding: 2rem;
 }
 .containerFuncionamento h3{
-  color: var(--gold);
+  color: var(--third);
+  letter-spacing: .2rem;
+  font-family: "Karma", serif;
 }
 .contentHorarioFuncionamento{
    display: flex;
@@ -109,16 +177,22 @@ main > section{
 }
 .boxContentHF aside{
   font-family: "Poppins", sans-serif;
+  letter-spacing: .1rem;
 }
+
 .containerLocation{
-  background: var(--grey3);
+  background: var(--second);
   display: flex;
   flex-direction: column;
   gap: .5rem;
   align-items: center;
   color: var(--white);
-  font-weight: 300;
   padding-block: 2rem;
+}
+.containerLocation h3{
+  letter-spacing: .2rem;
+  color: var(--third);
+  font-family: "Karma", serif;
 }
 .boxLocationContent{
   display: flex;
@@ -138,7 +212,7 @@ main > section{
 }
 
 .fa{
-  color: var(--gold);
+  color: var(--third);
 }
 .material-symbols-outlined {
   font-variation-settings:
@@ -164,21 +238,24 @@ footer{
 .boxContentFooter:nth-child(2){
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   gap: 1rem;
 }
 .boxContentFooter h3{
   color: var(--white);
-  font-weight: 300;
+  font-family: "Karma", serif;
+  letter-spacing: .2rem;
 }
 .boxContentFooter > aside{
   display: flex;
   gap: 2rem;
 }
-
+.boxContentFooter aside, p{
+  font-family: "Poppins", sans-Serif;
+  letter-spacing: .1rem;
+}
 .boxContentFooter p{
   color: var(--white);
-  font-weight: 300;
   width: 80%;
   text-align: justify;
 }
@@ -210,7 +287,26 @@ footer{
 
 
 @media screen and (min-width:720px){
-
+  .containerHairCuts{
+    width: 70%;
+  }
+  .boxHairCutsContent{
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
+  .boxHairCutsTitle h3{
+    font-size: var(--PCtitulos2);
+  }
+  .boxHairCutsTitle aside{
+    font-size: var(--PCtexto);
+  }
+  .cardContent{
+    font-size: var(--PCtexto);
+    padding: 2.4rem;
+  }
+  
   .boxTextPresentation h2{
     font-size: var(--PCtitulos);
   }
@@ -256,7 +352,9 @@ footer{
     font-size: var(--PCtexto);
     letter-spacing: .2rem;
   }
-  
+  .containerLocation h3{
+    font-size: var(--PCtitulos2);
+  }
   footer{
     flex-direction: row;
     justify-content: center;
